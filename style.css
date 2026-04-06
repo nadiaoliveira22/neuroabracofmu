@@ -1,0 +1,20 @@
+nav button {
+  background-color: #4a90e2;   /* cor de fundo */
+  color: white;                /* cor do texto */
+  border: none;                /* remove borda padrão */
+  padding: 10px 20px;          /* espaço interno */
+  margin: 5px;                 /* espaço entre botões */
+  border-radius: 8px;          /* cantos arredondados */
+  cursor: pointer;             /* cursor de mãozinha */
+  font-size: 16px;             /* tamanho da fonte */
+  transition: background 0.3s, transform 0.2s; /* animação suave */
+}
+
+nav button:hover {
+  background-color: #357ABD;   /* cor ao passar o mouse */
+}
+
+nav button:active {
+  background-color: #2d5a91;   /* cor ao clicar */
+  transform: scale(0.95);      /* leve redução */
+}
