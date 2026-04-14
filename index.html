@@ -24,16 +24,31 @@
   </nav>
 </header>
 
-
   <main>
     <section id="index" class="pagina">
-      <h1>Bem vindos ao universo de mentes únicas</h1>
-      <p>O autismo é uma condição do desenvolvimento que influência a forma como a pessoa se comunica, interage e percebe o mundo. Cada indivíduo autista é único. 
-      Aqui você encontra informações sobre locais em Sao Paulo de atendimento, atividades inclusivas e orientações sobre os níveis de suporte, sempre com o objetivo de promover bem-estar, inclusão e qualidade de vida.</p>
-    </section>
+  <div class="index-container">
+    <div class="index-texto">
+      <h1>Bem-vindos ao universo de mentes únicas</h1>
+      <p>
+        O autismo é uma condição do desenvolvimento que influencia a forma como a pessoa se comunica, interage e percebe o mundo. 
+        Cada indivíduo autista é único. Aqui você encontra informações sobre locais em São Paulo de atendimento, atividades inclusivas 
+        e orientações sobre os níveis de suporte, sempre com o objetivo de promover bem-estar, inclusão e qualidade de vida.
+      </p>
+      <div class="index-botoes">
+        <a href="#" onclick="mostrarPagina('servicos')" class="btn">Nossos Serviços</a>
+        <a href="#" onclick="mostrarPagina('contato')" class="btn btn-secundario">Entre em Contato</a>
+      </div>
+    </div>
+
+    <div class="index-imagem">
+      <img src="Assets/logo-neuroabraco.png" alt="Logo Neuro Abraço">
+    </div>
+  </div>
+</section>
 
     <section id="servicos" class="pagina" style="display:none;">
-  <h1>O que você precisa?</h1>
+  <div class="servicos-container">
+    <h1>O que você precisa?</h1>
 
  <div class="servicos-grid">
 
@@ -53,8 +68,7 @@
     <div class="card-conteudo">
       <h3>Locais de Atendimento Especializado</h3>
       <p>
-        Endereços e instituições em São Paulo que oferecem acompanhamento
-        especializado para pessoas autistas e suas famílias.
+        Endereços e instituições em São Paulo que oferecem acompanhamento especializado para pessoas autistas e suas famílias.
       </p>
     </div>
   </div>
@@ -64,19 +78,17 @@
     <div class="card-conteudo">
       <h3>Atividades Inclusivas e Lazer</h3>
       <p>
-        Sugestões de parques, oficinas e eventos culturais que promovem
-        inclusão e diversão para todos.
+        Sugestões de parques, oficinas e eventos culturais que promovem para todos uma inclusão e diversão garantida.
       </p>
     </div>
   </div>
 
   <div class="card-servico" onclick="mostrarPagina('alimentacao')">
-    <img src="Assets/bg2-esp2.jpg" alt="Informações alimentares">
+    <img src="Assets/bg4-alimento.jpg" alt="Informações alimentares">
     <div class="card-conteudo">
       <h3>Informações Alimentares</h3>
       <p>
-        Dicas sobre alimentação saudável e adaptada às necessidades
-        de pessoas autistas, com foco em bem-estar.
+        Dicas sobre alimentação saudável e adaptada às necessidades de pessoas autistas, com foco em bem-estar.
       </p>
     </div>
   </div>
@@ -116,6 +128,14 @@
   <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
 </section>
   </main>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2026 Neuro Abraço - Todos os direitos reservados</p>
+    <p>Email: neuroabracofmu@gmail.com | São Paulo - Brasil</p>
+  </div>
+</footer>
+
 
 <script src="main.js"></script>
 
