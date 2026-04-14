@@ -1,20 +1,126 @@
-nav button {
-  background-color: #4a90e2;   /* cor de fundo */
-  color: white;                /* cor do texto */
-  border: none;                /* remove borda padrão */
-  padding: 10px 20px;          /* espaço interno */
-  margin: 5px;                 /* espaço entre botões */
-  border-radius: 8px;          /* cantos arredondados */
-  cursor: pointer;             /* cursor de mãozinha */
-  font-size: 16px;             /* tamanho da fonte */
-  transition: background 0.3s, transform 0.2s; /* animação suave */
+header {
+  background-color: #fff;
+  border-bottom: 0px solid #ddd;
 }
 
-nav button:hover {
-  background-color: #357ABD;   /* cor ao passar o mouse */
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav button:active {
-  background-color: #2d5a91;   /* cor ao clicar */
-  transform: scale(0.95);      /* leve redução */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-area img {
+  width: 50px;
+  height: 45px;
+}
+
+.site-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #4a90e2; /* cor ao passar o mouse */
+}
+
+
+#servicos {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.card-servico {
+  background: #ffffff;
+  border-radius: 22px;
+  overflow: hidden;
+  cursor: pointer;
+  min-height: 340px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card-servico:hover {
+  transform: translateY(-4px);
+}
+
+.card-servico img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-servico {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.card-conteudo {
+  padding: 18px 16px 20px;
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.card-conteudo h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.card-conteudo p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .servicos-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 24px;
+  }
+
+  .card-servico {
+    width: 100%;
+    max-width: 320px;
+  }
 }

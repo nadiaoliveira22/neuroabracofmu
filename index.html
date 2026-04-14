@@ -6,39 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neuro Abraço</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Assets/logo-neuroabraco.png">
 </head>
 <body>
-  </header>
-  
-  <nav>
-      <button onclick="mostrarPagina('index')">Início</button>
-      <button onclick="mostrarPagina('servicos')">Serviços</button>
-      <button onclick="mostrarPagina('quem-somos')">Quem Somos</button>
-      <button onclick="mostrarPagina('contato')">Contato</button>
-    </nav>
-    <input type="text" placeholder="Como podemos ajudar?" class="search">
-  </header>
+<header>
+  <nav class="navbar">
+    <div class="logo-area">
+      <img src="Assets/logo-neuroabraco.png" alt="Logo Neuro Abraço">
+      <span class="site-name">Neuro Abraço</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" onclick="mostrarPagina('index')">home</a></li>
+      <li><a href="#" onclick="mostrarPagina('servicos')">serviços</a></li>
+      <li><a href="#" onclick="mostrarPagina('quem-somos')">quem somos</a></li>
+      <li><a href="#" onclick="mostrarPagina('contato')">contato</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main>
     <section id="index" class="pagina">
-      <h1>Bem-vinda ao site</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eum nobis repellat magnam molestias eos, dolorum dignissimos nostrum neque libero illo recusandae modi eaque quo aperiam inventore esse ullam quos.</p>
+      <h1>Bem vindos ao universo de mentes únicas</h1>
+      <p>O autismo é uma condição do desenvolvimento que influência a forma como a pessoa se comunica, interage e percebe o mundo. Cada indivíduo autista é único. 
+      Aqui você encontra informações sobre locais em Sao Paulo de atendimento, atividades inclusivas e orientações sobre os níveis de suporte, sempre com o objetivo de promover bem-estar, inclusão e qualidade de vida.</p>
     </section>
 
     <section id="servicos" class="pagina" style="display:none;">
-      <h1>Nossos Serviços</h1>
-      <p>Lista de serviços oferecidos...</p>
-    </section>
+  <h1>O que você precisa?</h1>
 
-    <section id="quem-somos" class="pagina" style="display:none;">
-      <h1>Quem Somos</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque at sit eaque iusto soluta quo ullam, saepe aliquam? Corporis et fugit tenetur dolorem obcaecati nam! Cupiditate dicta quo labore sapiente.</p>
-    </section>
+ <div class="servicos-grid">
 
-    <section id="contato" class="pagina" style="display:none;">
-      <h1>Contato</h1>
-     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, obcaecati deleniti! Voluptates, perferendis expedita! Ex, quas? Suscipit, labore. Sequi porro pariatur dicta. Aliquam, autem dolorem illum ut eos cupiditate veniam?</p>
-    </section>
+  <div class="card-servico" onclick="mostrarPagina('suporte')">
+    <img src="Assets/bg1-niveis.jpg" alt="Níveis de suporte">
+    <div class="card-conteudo">
+      <h3>Níveis de suporte</h3>
+      <p>
+        Informações básicas sobre os níveis 1, 2 e 3 de suporte
+        e como cada um influencia as necessidades da pessoa autista.
+      </p>
+    </div>
+  </div>
+
+  <div class="card-servico" onclick="mostrarPagina('locais')">
+    <img src="Assets/bg2-esp.jpg" alt="Locais de atendimento especializado">
+    <div class="card-conteudo">
+      <h3>Locais de Atendimento Especializado</h3>
+      <p>
+        Endereços e instituições em São Paulo que oferecem acompanhamento
+        especializado para pessoas autistas e suas famílias.
+      </p>
+    </div>
+  </div>
+
+  <div class="card-servico" onclick="mostrarPagina('atividades')">
+    <img src="Assets/bg3-parque.jpg" alt="Atividades inclusivas e lazer">
+    <div class="card-conteudo">
+      <h3>Atividades Inclusivas e Lazer</h3>
+      <p>
+        Sugestões de parques, oficinas e eventos culturais que promovem
+        inclusão e diversão para todos.
+      </p>
+    </div>
+  </div>
+
+  <div class="card-servico" onclick="mostrarPagina('alimentacao')">
+    <img src="Assets/bg2-esp2.jpg" alt="Informações alimentares">
+    <div class="card-conteudo">
+      <h3>Informações Alimentares</h3>
+      <p>
+        Dicas sobre alimentação saudável e adaptada às necessidades
+        de pessoas autistas, com foco em bem-estar.
+      </p>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<section id="quem-somos" class="pagina" style="display:none;">
+  <h1>Quem Somos</h1>
+
+  <p>Olá, nascemos de um projeto acadêmico no primeiro semestre de Análise e Desenvolvimento de Sistemas da FMU em São Paulo. O objetivo desse projeto teve como foco aplicar o que aprendemos na matéria de front-end com UX e UI.</p>
+
+  <p>Membros:</p>
+
+  <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
+  <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
+  <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
+  <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
+  <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
+  <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
+  <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
+</section>
+
+<section id="contato" class="pagina" style="display:none;">
+  <h1>Contato</h1>
+
+  <p>Contato do projeto: neuroabracofmu@gmail.com</p>
+
+  <p>Contato dos membros</p>
+
+  <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
+  <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
+  <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
+  <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
+  <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
+  <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
+  <p>Nádia de Oliveira Candido - rtv.nadia@gmail.com</p>
+</section>
   </main>
 
 <script src="main.js"></script>
