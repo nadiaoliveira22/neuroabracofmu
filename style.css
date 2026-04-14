@@ -1,7 +1,17 @@
 header {
   background-color: #fff;
-  border-bottom: 0px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
+
+main {
+  margin-top: 100px;
+}
+
 
 .navbar {
   max-width: 1200px;
@@ -20,7 +30,7 @@ header {
 
 .logo-area img {
   width: 50px;
-  height: 45px;
+  height: 50px;
 }
 
 .site-name {
@@ -41,13 +51,14 @@ header {
   text-decoration: none;
   color: #000;
   font-size: 16px;
-  text-transform: capitalize;
+  text-transform: lowercase;
   transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #4a90e2; /* cor ao passar o mouse */
+  color: #4a90e2;
 }
+
 
 
 #servicos {
