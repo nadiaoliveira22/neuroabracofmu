@@ -1,7 +1,7 @@
 header {
   height: var(--header-height);
   box-sizing: border-box;
-  background-color: #cde2eb;
+  background-color: #ffffff;
   border-bottom: 1px solid #ddd;
   position: fixed;
   top: 0;
@@ -19,6 +19,7 @@ body{
   padding-top: var(--header-height);
   font-family: sans-serif;
   color: #444;
+background: linear-gradient(to right, #9ae0fd, #f5c8cc);
 }
 
 .pagina {
@@ -26,7 +27,7 @@ body{
 }
 
 .pagina.ativa {
-  display: inherit; /* mantém o display original da seção */
+  display: inherit;
 }
 
 .navbar {
@@ -65,7 +66,7 @@ body{
 
 .nav-links li a {
   text-decoration: none;
-  color: #000;
+  color: #313131;
   font-size: 20px;
   text-transform: capitalize;
   transition: color 0.3s;
@@ -118,7 +119,7 @@ body{
 }
 
 .btn {
-  background-color: #4a90e2;
+  background-color: #619e44;
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
@@ -128,16 +129,16 @@ body{
 }
 
 .btn:hover {
-  background-color: #357ABD;
+  background-color: #86bd72;
 }
 
 .btn-secundario {
-  background-color: #9BCFF4;
-  color: #111;
+  background-color: #f4ee9b;
+  color: #161616;
 }
 
 .btn-secundario:hover {
-  background-color: #7BBBEA;
+  background-color: #e8ea7b;
 }
 
 .index-imagem {
