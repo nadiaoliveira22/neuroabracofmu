@@ -163,6 +163,27 @@ background: linear-gradient(to right, #9ae0fd, #f5c8cc);
     margin-top: 30px;
   }
 }
+.btn-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: none;
+  color: #111;
+  padding: 12px 24px;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 14px rgba(31, 112, 193, 0.15);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-voltar:hover {
+  transform: translateY(-3px);
+}
 
 #servicos {
   display: flex;
@@ -227,6 +248,344 @@ background: linear-gradient(to right, #9ae0fd, #f5c8cc);
   font-size: 16px;
   line-height: 1.6;
   color: #444;
+}
+
+#suporte {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  color: #111;
+}
+
+#suporte h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+#suporte .suporte-subtitulo {
+  font-size: 1.05em;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.niveis-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.nivel-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 24px;
+  box-shadow: 0 4px 14px rgba(31, 112, 193, 0.15);
+  border-top: 5px solid;
+  transition: transform 0.3s ease;
+}
+
+.nivel-card:hover {
+  transform: translateY(-4px);
+}
+
+.nivel-card.nivel-1 { border-color: #8ed06b; }
+.nivel-card.nivel-2 { border-color: #f4c542; }
+.nivel-card.nivel-3 { border-color: #e07b54; }
+
+.nivel-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 30px;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.nivel-1 .nivel-badge { background-color: #619e44; }
+.nivel-2 .nivel-badge { background-color: #c9a400; }
+.nivel-3 .nivel-badge { background-color: #c0552a; }
+
+.nivel-card h2 {
+  font-size: 1.3em;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.nivel-card p {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #444;
+}
+
+.nivel-card ul {
+  padding-left: 18px;
+  margin-top: 10px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.suporte-nota {
+  background: #ffffff;
+  border-left: 4px solid #9ae0fd;
+  border-radius: 10px;
+  padding: 20px 24px;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.7;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+@media (max-width: 768px) {
+  .niveis-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+#locais {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  color: #111;
+}
+
+#locais h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#locais .locais-subtitulo {
+  font-size: 1.05em;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.locais-lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 40px;
+}
+
+.local-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 37px;
+  box-shadow: 0 4px 14px rgba(31, 112, 193, 0.15);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+  list-style: none;
+  padding-left: 20px;
+  color: #555;
+}
+
+.local-card:hover {
+  transform: translateY(-3px);
+}
+
+.local-tipo {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #e6f4e0;
+  color: #3a7a1e;
+  padding: 3px 10px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.local-card h3 {
+  font-size: 1.1em;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.local-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.local-card .local-telefone {
+  font-weight: bold;
+  color: #619e44;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .locais-lista {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+#atividades {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  color: #111;
+}
+
+#atividades h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#atividades .atividades-subtitulo {
+  font-size: 1.05em;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.atividades-categorias {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.atividade-categoria h2 {
+  font-size: 1.3em;
+  color: #111;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #d6eecc;
+}
+
+.atividade-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.atividade-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 14px rgba(31, 112, 193, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.atividade-card:hover {
+  transform: translateY(-3px);
+}
+
+.atividade-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.atividade-card h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.atividade-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .atividade-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+#alimentacao {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  color: #111;
+}
+
+#alimentacao h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#alimentacao .alimentacao-subtitulo {
+  font-size: 1.05em;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.alimentacao-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.alimento-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 26px 22px;
+  box-shadow: 0 4px 14px rgba(31, 112, 193, 0.13);
+  transition: transform 0.3s ease;
+}
+
+.alimento-card:hover {
+  transform: translateY(-3px);
+}
+
+.alimento-card.destaque {
+  border-left: 4px solid #619e44;
+}
+
+.alimento-card.alerta {
+  border-left: 4px solid #e07b54;
+}
+
+.alimento-card h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.alimento-card ul {
+  padding-left: 18px;
+  color: #444;
+  font-size: 14.5px;
+  line-height: 1.85;
+}
+
+.alimento-card p {
+  font-size: 14.5px;
+  color: #444;
+  line-height: 1.65;
+}
+
+.alimentacao-aviso {
+  background: #fff8e1;
+  border: 1px solid #f4c542;
+  border-radius: 12px;
+  padding: 18px 22px;
+  font-size: 14px;
+  color: #5a4200;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .alimentacao-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
