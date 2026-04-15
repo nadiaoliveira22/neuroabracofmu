@@ -1,4 +1,6 @@
 header {
+  height: var(--header-height);
+  box-sizing: border-box;
   background-color: #cde2eb;
   border-bottom: 1px solid #ddd;
   position: fixed;
@@ -9,10 +11,12 @@ header {
 }
 
 main {
-  margin-top: 0;
+  margin-top: 75px;
 }
 
 body{
+  margin: 0;
+  padding-top: var(--header-height);
   font-family: sans-serif;
   color: #444;
 }
@@ -224,7 +228,6 @@ body{
   color: #444;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
   .servicos-grid {
     grid-template-columns: 1fr;
@@ -236,16 +239,31 @@ body{
   }
 }
 
+#quem-somos, #contato {
+  color: #000;
+  text-align: center;
+  padding-top:75px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
+.membros {
+  font-style: bold;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+  justify-items: center;
+}
 
 footer {
+  flex-shrink: 0;
+  height: var(--header-height);
   background-color: #4a90e2;
   color: white;
   text-align: center;
   padding: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  width: 100%
 }
 
 
