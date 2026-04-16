@@ -20,3 +20,12 @@ function mostrarPagina(id) {
   el.focus();
   history.pushState(null, '', `#${id}`);
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash.replace('#', '');
+  if (hash) {
+    mostrarPagina(hash);
+  } else {
+    mostrarPagina('index');
+  }
+});

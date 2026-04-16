@@ -1,3 +1,10 @@
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
 header {
   height: var(--header-height);
   box-sizing: border-box;
