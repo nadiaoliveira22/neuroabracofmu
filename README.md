@@ -31,21 +31,6 @@ O projeto reúne informações sobre:
 - Layout responsivo para mobile e desktop
 - Cards informativos com animações suaves
 - Seções de membros e contato da equipe
-
----
-
-## 📁 Estrutura do Projeto
-neuroabracofmu/
-├── index.html
-├── style.css
-├── main.js
-└── Assets/
-├── logo-neuroabraco.png
-├── bg1-niveis.jpg
-├── bg2-esp.jpg
-├── bg3-parque.jpg
-└── bg4-alimento.jpg
-
 ---
 
 ## 👩‍💻 Equipe
