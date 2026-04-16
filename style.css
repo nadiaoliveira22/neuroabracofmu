@@ -119,7 +119,7 @@ background: linear-gradient(to right, #9ae0fd, #f5c8cc);
 }
 
 .btn {
-  background-color: #619e44;
+  background-color: #4da9df;
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
@@ -129,16 +129,16 @@ background: linear-gradient(to right, #9ae0fd, #f5c8cc);
 }
 
 .btn:hover {
-  background-color: #86bd72;
+  background-color: #2857d8;
 }
 
 .btn-secundario {
-  background-color: #f4ee9b;
-  color: #161616;
+  background-color: #f36c99;
+  color: #ffffff;
 }
 
 .btn-secundario:hover {
-  background-color: #e8ea7b;
+  background-color: #e75eb3;
 }
 
 .index-imagem {
@@ -397,7 +397,6 @@ background: linear-gradient(to right, #9ae0fd, #f5c8cc);
   letter-spacing: 1px;
   text-transform: uppercase;
   background-color: #e6f4e0;
-  color: #3a7a1e;
   padding: 3px 10px;
   border-radius: 30px;
   margin-bottom: 10px;
@@ -418,7 +417,6 @@ background: linear-gradient(to right, #9ae0fd, #f5c8cc);
 
 .local-card .local-telefone {
   font-weight: bold;
-  color: #619e44;
   font-size: 14px;
 }
 
@@ -460,7 +458,6 @@ background: linear-gradient(to right, #9ae0fd, #f5c8cc);
   color: #111;
   margin-bottom: 16px;
   padding-bottom: 8px;
-  border-bottom: 2px solid #d6eecc;
 }
 
 .atividade-cards {
@@ -472,7 +469,7 @@ background: linear-gradient(to right, #9ae0fd, #f5c8cc);
 .atividade-card {
   background: #ffffff;
   border-radius: 16px;
-  padding: 24px;
+  padding: 37px;
   box-shadow: 0 4px 14px rgba(31, 112, 193, 0.15);
   transition: transform 0.3s ease;
 }
@@ -486,6 +483,18 @@ background: linear-gradient(to right, #9ae0fd, #f5c8cc);
   margin-bottom: 10px;
 }
 
+.atividade-categoria{
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 14px rgba(31, 112, 193, 0.15);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+  list-style: none;
+  padding-left: 20px;
+  color: #555;
+}
+
 .atividade-card h3 {
   font-size: 1.1em;
   font-weight: bold;
@@ -497,6 +506,18 @@ background: linear-gradient(to right, #9ae0fd, #f5c8cc);
   font-size: 14px;
   color: #555;
   line-height: 1.6;
+}
+
+.detalhe-aviso {
+  background: #e0eafc;
+  border-radius: 16px;
+  padding: 37px;
+  box-shadow: 0 4px 14px rgba(31, 112, 193, 0.15);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+  list-style: none;
+  padding-left: 20px;
+  color: #494949;
 }
 
 @media (max-width: 768px) {
@@ -528,58 +549,64 @@ background: linear-gradient(to right, #9ae0fd, #f5c8cc);
 .alimentacao-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 25px;
   margin-bottom: 40px;
 }
 
 .alimento-card {
   background: #ffffff;
-  border-radius: 16px;
-  padding: 26px 22px;
-  box-shadow: 0 4px 14px rgba(31, 112, 193, 0.13);
+  border-radius: 20px;
+  padding: 30px 28px;
+  box-shadow: 0 4px 14px rgba(31, 112, 193, 0.15);
   transition: transform 0.3s ease;
+  box-sizing: border-box;
+  border: none;
 }
 
 .alimento-card:hover {
   transform: translateY(-3px);
 }
 
-.alimento-card.destaque {
-  border-left: 4px solid #619e44;
-}
-
-.alimento-card.alerta {
-  border-left: 4px solid #e07b54;
-}
-
 .alimento-card h3 {
-  font-size: 1.1em;
+  font-size: 1.15em;
   font-weight: bold;
   color: #111;
   margin-bottom: 12px;
-}
-
-.alimento-card ul {
-  padding-left: 18px;
-  color: #444;
-  font-size: 14.5px;
-  line-height: 1.85;
+  margin-top: 0;
 }
 
 .alimento-card p {
-  font-size: 14.5px;
+  font-size: 15px;
   color: #444;
-  line-height: 1.65;
+  line-height: 1.7;
+  margin: 0 0 10px 0;
 }
 
-.alimentacao-aviso {
-  background: #fff8e1;
-  border: 1px solid #f4c542;
-  border-radius: 12px;
-  padding: 18px 22px;
-  font-size: 14px;
-  color: #5a4200;
-  line-height: 1.7;
+.alimento-card ul {
+  padding-left: 20px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 8px 0 0 0;
+}
+
+.alimento-card ul li {
+  margin-bottom: 4px;
+}
+
+.aviso-alim {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 28px;
+  box-shadow: 0 4px 14px rgba(31, 112, 193, 0.15);
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  border: none;
+  margin-top: 25px;
+}
+
+.aviso-alim:hover {
+  transform: translateY(-3px); /* ← resolve a animação */
 }
 
 @media (max-width: 768px) {
@@ -599,21 +626,101 @@ background: linear-gradient(to right, #9ae0fd, #f5c8cc);
   }
 }
 
-#quem-somos, #contato {
-  color: #000;
-  text-align: center;
-  padding-top:75px;
+#quem-somos {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: left;
 }
 
-.membros {
-  font-style: bold;
+#quem-somos h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+#quem-somos h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.qs-bloco {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 36px 40px;
+  box-shadow: 0 4px 14px rgba(31, 112, 193, 0.15);
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.qs-bloco:hover {
+  transform: translateY(-3px);
+}
+
+.lista-membros {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
-  margin-top: 18px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.lista-membros li {
+  background: #f0f7ff;
+  border-radius: 12px;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-left: 4px solid #9ae0fd;
+}
+
+.membro-nome {
+  font-weight: bold;
+  color: #111;
+  font-size: 15px;
+}
+
+.membro-email {
+  font-size: 13px;
+  color: #666;
+}
+
+#contato {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+#contato h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+#contato h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.contato-projeto {
+  background: #f7fff0;
+  border-radius: 12px;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-left: 4px solid #b3e4a4;
+  margin-top: 16px;
+  max-width: 320px;
 }
 
 footer {
